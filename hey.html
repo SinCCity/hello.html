@@ -1,34 +1,52 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Web Page!</title>
+        <title>Jobs Log</title>
         <style>
-            #top {
-                font-size: 36px;
+            table {
+                border: 2px solid black;
+                border-collapse: collapse;
+                width: 50%:
             }
             
-            #middle {
-                font-size: 24px;
+            th, td {
+                border: 1px solid black;
+                padding: 5px;
+                text-align: center;
             }
             
-            #bottom {
-                font-size: 12px;
-            }
-            
-            .name {
-                font-weight: bold;
+            th {
+                background-color: lightgray;
             }
         </style>
     </head>
     <body>
-        <div id="top">
-            This is the <span class="name">top</span> of my web page.
-        </div>
-        <div id="middle">
-            This is the <span class="name">middle</span> of my web page.
-        </div>
-        <div id="bottom">
-            This is the <span class="name">bottom</span> of my web page.
-        </div>
+        <h1>Jobs Log</h1>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>job</th>
+                <th>Description</th>
+                <th>Outcome</th>
+                <th>Additional Comments</th>
+            </tr>
+            <tr>
+                <td><input type="date"></td>
+                <td><input type="time"></td>
+                <td>
+                    <select name="job_options">
+                        <option disabled selected value="">Select Job Type</option>
+                        <option value="installs">Installs</option>
+                    </select>
+                </td>
+                <td><textarea rows="3" cols="25%" placeholder="Description"></textarea></td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Adams</td>
+                <td>1797-1801</td>
+            </tr>
+        </table>
     </body>
 </html>
